@@ -1,0 +1,298 @@
+.categoriesTitle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.categories{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+
+.main{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.categoriesRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.ct{
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.ct:hover{
+    background-color: red;
+    border: 1px solid rgb(211, 12, 12);
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .categoriesRow{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+    .categoriesTitlesh{
+        font-size: 20px;
+    }
+    .ct{
+        height: 30px;
+    }
+    .categoriesTitle{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.filter{
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 1px solid rgb(162, 162, 162);
+    margin-top: 50px;
+}
+
+.range{
+    width: 250px;
+    cursor: pointer;
+    background: red;
+    cursor: pointer;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.fil{
+    gap: 10px;
+    margin: 20px;
+}
+.btnf{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    height: 40px;
+    color: white;
+    font-weight: 600px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 3s;
+    background-color: red;
+    transition-duration: 20s;
+}
+
+.btnf:hover{
+    background-color: yellow;
+}
+
+.nutVegrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .checkboxc{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.checkbox{
+    size: 30px;
+    cursor: pointer;
+}
+
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .filter{
+        width: 70%;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 60%;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+
+.cards{
+    width: 300px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    gap: 15px;
+
+}
+
+
+.cards:hover{
+    box-shadow: 5px 10px 10px 10px rgb(102, 102, 102);
+    .btn:hover{
+        background-color: red;
+    }
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.row1{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+}
+.cards:hover{
+    box-shadow: 50px;
+}
+
+.btn{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+img{
+    width: 100%;
+    height: 250px;
+}
+
+
+h4{
+    color: rgb(83, 81, 81);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.price{
+    font-size: 25px;
+}
+
+
+.img-div{
+    background-color: rgb(199, 194, 194);
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .name{
+        font-size: 20px;
+    }
+
+    .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .rowOfComp{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid{
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .cards{
+        width: 100%;
+    }
+}
+
+
+.rowOfComp{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px;
+    border-top:3px solid red;
+}

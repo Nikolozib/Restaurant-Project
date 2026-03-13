@@ -1,0 +1,17 @@
+<div class="grid">
+    <div *ngFor="let item of products" class="cards">
+        <div class="img-div">
+            <img [src]="item.image" [alt]="item.name">
+        </div>
+        <h2 class="name">{{item.name}}</h2>
+        <h4>spiciness: {{item.spiciness}}</h4>
+        <div class="row1">
+            <h4>nuts:{{item.nuts}}</h4>
+            <h4>vegeterian:{{item.vegeterian}}</h4>
+        </div>
+        <div class="row">
+            <h1 class="price">$ {{item.price}}</h1>
+            <button class="btn" (click)="apiService.addToBasket(item.id)">Add to cart</button>
+        </div>
+    </div>
+</div>

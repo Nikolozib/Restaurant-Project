@@ -1,0 +1,122 @@
+.btn{
+    background-color: rgb(196, 6, 6);
+    border-radius: 5px;
+    border: none;
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.btn:hover{
+    background-color: yellow;
+}
+
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prod-info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    border-bottom: 3px solid rgb(203, 200, 200);
+    border-radius: 10px;
+}
+
+.prod-info:hover{
+    background-color: rgb(232, 231, 231);
+}
+
+.dbtn:hover{
+    color: red;
+}
+
+.dbtn{
+    cursor: pointer;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+
+.rowd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+p{
+    font-size: 20px;
+}
+
+
+.qtnb{
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+
+
+
+.r{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    justify-self: center;
+    margin-top: 20px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+    .prod-name{
+        font-size: 15px;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    .flex-end{
+        justify-content: flex-start;
+    }
+    .dbtn{
+        font-size: 24px;
+    }
+    .prod-info{
+        width: 90%;
+    }
+    .rowd{
+        gap: 10px;
+    }
+}

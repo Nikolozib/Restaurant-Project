@@ -1,0 +1,61 @@
+<div class="main">
+    <div class="categoriesTitle">
+        <h1>Categories</h1>
+    </div>
+
+    <div  class="categoriesRow">
+        <div class="ct">
+            <h2 class="categoriesTitlesh" (click)="getAllProducts()">ALL</h2>
+        </div>
+        <div *ngFor="let item of categories" class="ct">
+            <h2 class="categoriesTitlesh" (click)="categoryFilter(item.id)">{{item.name}}</h2> 
+         </div>
+    </div>
+</div>
+<div class="rowOfComp">
+    <div class="center">
+            <div class="filter">    
+            <h1>Filter</h1>
+            <div class="fil">
+                <h2>spiciness:{{spiciness}}</h2>
+                <div>
+                    <input class="range" (input)="rangechange()"  type="range" name="nut" [(ngModel)]="range" min="0" max="5">
+                </div>
+                <div class="gap">      
+                    <div class="check">
+                        <input class="checkbox" type="checkbox" name="nuts" [(ngModel)]="nut">
+                        <h2>No nuts</h2>
+                    </div>
+                    <div class="check">
+                        <input class="checkbox" type="checkbox" name="Vegetarian" [(ngModel)]="veg">
+                        <h2>Vegetarian only</h2>
+                    </div>
+                </div>
+                <button (click)="reset()" class="btnf" (click)="getAllProducts()">RESET</button>
+                <button (click)="Filter()" class="btnf">APPLY</button>
+            </div>
+            </div>
+    </div>
+    <div class="grid">
+        <div *ngFor="let product of productsForShow" class="cards">
+            <div class="img-div">
+                <img [src]="product.image" [alt]="product.name">
+            </div>
+            <h2 class="name">{{product.name}}</h2>
+            <h4>spiciness: {{product.spiciness}}</h4>
+            <div class="row1">
+                <div class="nutVegrow">
+                    <h4>nuts:</h4>
+                    <input class="checkboxc" type="checkbox" name="a" id="" [checked]="product.nuts">
+                </div>
+                <div class="nutVegrow">
+                    <h4>vegeterian:</h4>
+                    <input class="checkboxc" type="checkbox" name="a" id="" [checked]="product.vegeterian">
+                </div>
+            </div>
+            <div class="row">
+                <h1 class="price">$ {{product.price}}</h1>
+                <button class="btn" (click)="apiService.addToBasket(product.id)">Add to cart</button>
+            </div>
+        </div>
+</div> 

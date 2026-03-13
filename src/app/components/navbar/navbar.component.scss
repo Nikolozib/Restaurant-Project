@@ -1,0 +1,99 @@
+.Name{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bottom{
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.h1{
+    font-size: 40px;
+    color: white;
+}
+
+h3{
+    font-size: 25px;
+    color: white;
+    opacity: 0.8;
+}
+
+.h{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(5, 5, 5, 0.8);
+    height: 100px;
+}
+
+.main{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    border-bottom: 3px solid rgb(204, 32, 32);
+}
+
+.pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+
+.row{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 30px;
+}
+
+
+.img{
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+.row:hover{
+    .img{
+        transform: translateX(20px);
+    }
+}
+
+
+.Home:hover{
+    border-bottom: 3px solid red;
+    color: red;
+}
+
+@media only screen and (max-width: 500px) {
+    .h1{
+        font-size: 20px;
+    }
+    .bottom{
+        font-size: 16px;
+    }
+    .h{
+        font-size: 18px;
+    }
+
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+    .pages{
+        gap: 10px;
+    }
+}

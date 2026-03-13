@@ -1,0 +1,72 @@
+
+.filter{
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 1px solid rgb(162, 162, 162);
+    margin-top: 50px;
+}
+
+.range{
+    width: 90%;
+    cursor: pointer;
+    background: red;
+    cursor: pointer;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.fil{
+    gap: 10px;
+    margin: 20px;
+}
+.btn{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    height: 40px;
+    color: white;
+    font-weight: 600px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 3s;
+    background-color: red;
+}
+
+.btn:hover{
+    transform: translateY(3px);
+    background-color: yellow;
+}
+
+
+.checkbox{
+    size: 30px;
+    cursor: pointer;
+}
+
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .filter{
+        width: 70%;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+}

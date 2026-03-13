@@ -1,0 +1,101 @@
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+
+.cards{
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    gap: 15px;
+
+}
+
+
+.cards:hover{
+    box-shadow: 5px 10px 5px 10px rgb(38, 38, 38);
+    .btn:hover{
+        background-color: red;
+    }
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.row1{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+}
+.cards:hover{
+    box-shadow: 50px;
+}
+
+.btn{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+img{
+    width: 100%;
+    height: 250px;
+}
+
+
+h4{
+    color: rgb(83, 81, 81);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.price{
+    font-size: 25px;
+}
+
+
+.img-div{
+    background-color: rgb(199, 194, 194);
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .name{
+        font-size: 20px;
+    }
+
+    .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .cards{
+        width: 80%;
+    }
+}

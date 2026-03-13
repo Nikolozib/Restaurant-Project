@@ -1,0 +1,29 @@
+.nav{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 5px;
+    margin-left: 200px;
+}
+
+.c{
+    cursor: pointer;
+    color: white;
+}
+
+.yellow{
+    color: yellow;
+}
+
+@media only screen and (max-width: 500px) {
+    .row{
+        margin-left: 50px;
+    }
+}

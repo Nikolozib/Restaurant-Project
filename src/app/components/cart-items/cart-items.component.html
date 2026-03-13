@@ -1,0 +1,24 @@
+<div class="cont">
+    <div *ngFor="let item of products" class="prod-info">
+
+        <div class="rowd">
+            <h1 (click)="apiService.deleteProduct(item.product.id)" class="dbtn">X</h1>
+            <img [src]="item.product.image" [alt]="item.product.name">
+            <h2 class="prod-name">{{item.product.name}}</h2>
+        </div>
+        <div class="rowd">
+            <div class="row">
+                <button class="qtnb" (click)="apiService.editProduct(item.quantity+1,item.product.id)">+</button>
+                <p >{{item.quantity}}</p>
+                <button class="qtnb" (click)="apiService.editProduct(item.quantity-1,item.product.id)">-</button>
+            </div>
+            <div class="r">
+                <p  ngDefaultControl>${{item.product.price}}</p>
+            </div>
+            <p>${{item.product.price*item.quantity}}</p>
+        </div>
+    </div>
+    <div class="flex-end">
+        <button class="btn">PROCEED TO CHECK OUT</button>
+    </div>
+</div>
